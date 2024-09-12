@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Dò Mìn</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="menuScreen">
+      <h1>Minesweeper</h1>
+      <ul>
+        <li id="gameStart">Màn chơi mới</li>
+        <li id="gameContinue">Tiếp tục</li>
+        <li id="gameDocument">Hướng dẫn</li>
+      </ul>
+    </div>
+    <div id="gameScreen">
+      <div id="alert">
+        <div id="win">
+          Bạn đã thắng. Bắt đầu lại ?
+        </div>
+        <div id="defeat">
+          Bạn đã thua. Bắt đầu lại ?
+        </div>
+        <button id="yesButton">Có</button>
+        <button id="noButton">Không</button>
+      </div>
+
+      <div id="gameToolBars">
+        <div id="flagIcon" class="toolbar-icon"></div>
+        <div id="pointerIcon" class="toolbar-icon"></div>
+        <div id="timeCount">00:00</div>
+        <div id="documentIcon" class="toolbar-icon"></div>
+        <div id="exitIcon" class="toolbar-icon"></div>
+      </div>
+      <div id="game-container">
+      </div>
+    </div>
+    <div id="documentScreen">
+    </div>
+  </div>
+  <audio id="sound">
+    <source src="sound1.mp3" type="audio/ogg">
+  </audio>
+  <audio id="sound2">
+    <source src="sound2.mp3" type="audio/ogg">
+  </audio>
+  <script src="script.js"></script>
+</body>
+
+</html>
